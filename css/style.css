@@ -79,4 +79,24 @@ h2{
   tr:last-child td:first-child {
       border-bottom-left-radius: 15px;
   }
+.full-td {
+    margin: 0;
+    padding: 0;
+    width: 30% !important;
+    height: 15rem !important;
+  }
+  .full-td iframe {
+    margin: 0;
+    padding: 0;
+    height: 18.5rem;
+    width: 100%!important;
+    background-color: black;
+
+  }
+  .full-td img{
+    margin: 0;
+    padding: 0;
+    width: 100%!important;
+    height: 18.5rem;
+  }
  
