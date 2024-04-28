@@ -99,4 +99,28 @@ h2{
     width: 100%!important;
     height: 18.5rem;
   }
+@media only screen and (max-width: 768px) {
+   
+    .full-td {
+        margin: 0;
+        padding: 0;
+        width: auto !important;
+        height: auto !important;
+      }
+      .full-td iframe {
+        margin: 0;
+        padding: 0;
+        height: 200px !important;
+        width: 300px!important;
+        background-color: black;
+    
+      }
+      .full-td img{
+        margin: 0;
+        padding: 0;
+        width: 300px!important;
+        height: 200px !important;
+      }
+  }
+  
  
