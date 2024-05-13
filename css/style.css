@@ -214,3 +214,11 @@ h2{
         /* Colours for Monstie collector page can be adjusted from here */  
         .monstie-th {background-color: rgb(240, 136, 136);color: white}    
        .monstie-td {background-color: #f4cccc;color: rgb(0, 0, 0)}
+
+       table.border-collapse {
+        border-collapse: collapse;
+    }
+    
+    .no-border td {
+        border: none;
+    }
