@@ -215,6 +215,12 @@ h2{
         .monstie-th {background-color: rgb(240, 136, 136);color: white}    
        .monstie-td {background-color: #f4cccc;color: rgb(0, 0, 0)}
 
+       .prayer-bg {background-color: #e1d6ee;color:white}
+
+       .prayer-image {
+        margin: 0 10px; /* Adds horizontal spacing between images */
+    }
+
        table.border-collapse {
         border-collapse: collapse;
     }
@@ -228,3 +234,8 @@ h2{
       zoom: 0.5;
       }
       }
+
+      .custom-background {
+        background-color: #f7f4fb; /* Replace with your desired background color */
+    }
+    
