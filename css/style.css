@@ -225,8 +225,29 @@ h2{
         border: none;
     }
 
-    @media only screen and (max-width: 768px) {
-      table {
-      zoom: 0.9;
-      }
-      }
+   @media only screen and (max-width: 320px) {
+    table {
+        zoom: 0.85;
+    }
+}
+
+/* Small devices (phones, 375px and up) */
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+    table {
+        zoom: 0.9;
+    }
+}
+
+/* Medium devices (large phones, 425px and up) */
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+    table {
+        zoom: 0.95;
+    }
+}
+
+/* Large devices (tablets, 768px and up) */
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    table {
+        zoom: 1;
+    }
+}
