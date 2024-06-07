@@ -209,17 +209,13 @@ h2{
 
        /* Colours for BOW Master page can be adjusted from here */
        .bow-master-th {background-color: #7030a0; color: white;}
-       .bow-master-td {background-color: e4d0f0#; color: black;}
+       .bow-master-td {background-color: #e4d0f0; color: black;}
 
         /* Colours for Monstie collector page can be adjusted from here */  
         .monstie-th {background-color: rgb(240, 136, 136);color: white}    
        .monstie-td {background-color: #f4cccc;color: rgb(0, 0, 0)}
 
-       .prayer-bg {background-color: #e1d6ee;color:white}
-
-       .prayer-image {
-        margin: 0 10px; /* Adds horizontal spacing between images */
-    }
+       .testcolors {background-color: #00D6FF; color:white} 
 
        table.border-collapse {
         border-collapse: collapse;
@@ -234,8 +230,3 @@ h2{
       zoom: 0.7;
       }
       }
-
-      .custom-background {
-        background-color: #f1e7f8; /* Replace with your desired background color */
-    }
-    
