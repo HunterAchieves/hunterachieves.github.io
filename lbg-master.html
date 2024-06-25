@@ -151,12 +151,20 @@
             </th>
         </tr>
         <tr class="no-border">
-            <td colspan="5" class="bow-master-td" style="text-align: center;">
-                <div class="image-container">
-                    <img src="images/prayer-lbg1.png" alt="Description of image 1" class="prayer-image">
-                    <img src="images/prayer-lbg2.png" alt="Description of image 2" class="prayer-image">
-                    <img src="images/prayer-lbg3.png" alt="Description of image 3" class="prayer-image">
-                </div>
+            <tr class="no-border">
+                <td colspan="5" class="bow-master-td" style="text-align: center;">
+                    <div class="image-container">
+                         <!-- Links to switch the first image -->
+                         <div style="padding-top: 10px;">
+                            <a href="#" onclick="switchBowImage('images/prayer-lbg1.png'); return false;">SR/Armor (No Sigil) Values</a> |
+                            <a href="#" onclick="switchBowImage('images/prayerlbg-base.png'); return false;">Base Values</a>
+                        </div>
+                        <!-- First image with switchable source -->
+                        <img id="lbgImage" src="images/prayer-lbg1.png" alt="Bow Image" class="prayer-image">
+                        <!-- Constant images -->
+                        <img src="images/prayer-lbg2.png" alt="lbg2" class="prayer-image">
+                        <img src="images/prayer-lbg3.png" alt="lbg3" class="prayer-image">
+                    </div>
             </td>
         </tr>
             <tr>
@@ -243,3 +251,8 @@
 <br><br><br><br>
     </div>
   </body>
+  <script>
+    function switchBowImage(imagePath) {
+        document.getElementById('lbgImage').src = imagePath;
+    }
+</script>

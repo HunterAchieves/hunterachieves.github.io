@@ -148,7 +148,15 @@
             <tr>
               <th class="swaxe-master-th"="color: #7031a1;" colspan="5"><img src="images/ls.png" style="width:80px ; padding-right:20px ;color:#e4d0f0;">Achieve the required floors with a team, all equipped with a Long Sword</th>
               <tr>
-                <td class="bow-master-td" colspan="5" style="text-align: center;"><img src="images/prayer-ls.png" alt="Prayer LS"></td>
+                <td class="bow-master-td" colspan="5" style="text-align: center;">
+                    <!-- Links to switch images -->
+                    <div style="padding-top: 10px;">
+                        <a href="#" onclick="switchImage('images/prayer-ls.png'); return false;">SR/Armor (No Sigil) Values</a> |
+                        <a href="#" onclick="switchImage('images/prayerls-base.png'); return false;">Base Values</a>
+                    </div>
+                    <!-- Image display container -->
+                    <img id="displayedImage" src="images/prayer-ls.png" alt="Prayer LS">
+                  </td>
             </tr>
             </tr>
         
@@ -217,3 +225,8 @@
 <br><br><br><br>
     </div>
   </body>
+  <script>
+    function switchImage(imagePath) {
+        document.getElementById('displayedImage').src = imagePath;
+    }
+</script>

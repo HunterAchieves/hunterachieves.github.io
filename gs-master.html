@@ -147,7 +147,15 @@
 
                 </th>
                 <tr>
-                  <td class="bow-master-td" colspan="5" style="text-align: center;"><img src="images/prayer-gs.png" alt="Prayer GS"></td>
+                  <td class="bow-master-td" colspan="5" style="text-align: center;">
+                    <!-- Links to switch images -->
+                    <div style="padding-top: 10px;">
+                        <a href="#" onclick="switchImage('images/prayer-gs.png'); return false;">SR/Armor (No Sigil) Values</a> |
+                        <a href="#" onclick="switchImage('images/prayergs-base.png'); return false;">Base Values</a>
+                    </div>
+                    <!-- Image display container -->
+                    <img id="displayedImage" src="images/prayer-gs.png" alt="Prayer GS">
+                  </td>
               </tr>
             </tr>
         
@@ -211,3 +219,8 @@
 <br><br><br><br>
     </div>
   </body>
+  <script>
+    function switchImage(imagePath) {
+        document.getElementById('displayedImage').src = imagePath;
+    }
+</script>
